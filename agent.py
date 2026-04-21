@@ -12,7 +12,7 @@ load_dotenv()
 #   "google-gla:gemini-2.5-flash"       (needs GOOGLE_API_KEY)
 #   "openai:gpt-4o-mini"                (needs OPENAI_API_KEY)
 #   "anthropic:claude-sonnet-4-6"    (needs ANTHROPIC_API_KEY)
-MODEL = "google-gla:gemini-2.5-flash"
+MODEL = "openai:gpt-4o-mini"
 
 agent = Agent(
     MODEL,
@@ -81,6 +81,7 @@ def main():
 
         print(f"\n**Answer:** {result.output}\n")
         print("---\n")
+
 
 
 if __name__ == "__main__":
